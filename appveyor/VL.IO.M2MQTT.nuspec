@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.IO.M2MQTT</id>
+    <version>$version$</version>
+    <title>VL.IO.M2MQTT</title>
+    <authors>vvvv</authors>
+    <owners>vvvv</owners>
+    <projectUrl>http://vvvv.org</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>An MQTT client for VL</summary>
+    <description>MQTT for VL</description>
+    <copyright>Copyright © 2019 by vvvv group. All rights reserved.</copyright>
+    <tags>VL, iot, mqtt</tags>
+	<dependencies>
+      <dependency id="M2MqttDotnetCore" version="[1.0.8]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+  </files>
+</package>
