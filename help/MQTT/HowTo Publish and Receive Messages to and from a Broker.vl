@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Di4DgpVsnefPCkBy6qkSvX" LanguageVersion="2019.1.0-0624-g5df7a10830" Version="0.128">
-  <NugetDependency Id="GGdvarIkyvWLkjpBypCkU8" Location="VL.CoreLib" Version="2019.1.0-624" />
+<Document xmlns:p="property" Id="Di4DgpVsnefPCkBy6qkSvX" LanguageVersion="2020.1.7.184" Version="0.128">
+  <NugetDependency Id="GGdvarIkyvWLkjpBypCkU8" Location="VL.CoreLib" Version="2020.1.7" />
   <Patch Id="A8Lw1Itg23GNlwVmJzfWih">
     <Canvas Id="VBK5MeZr5m4OVcxFNC3seY" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -26,10 +26,12 @@
             <Pin Id="Sr9sZwKpDPDPh8U6uY5af3" Name="Broker Port" Kind="InputPin" />
             <Pin Id="OpkKgvMDaEkOv8yR7HxSTn" Name="Client Id" Kind="InputPin" />
             <Pin Id="B1h2r1abjDcMDQu9C256Ut" Name="Enabled" Kind="InputPin" />
+            <Pin Id="H29gJe0xvJrOcKqIIu5UiL" Name="Username" Kind="InputPin" />
+            <Pin Id="GeBdP2312uBMEePOXiKszl" Name="Password" Kind="InputPin" />
             <Pin Id="BDlVxv3pGREL3e1dgCBRpq" Name="Output" Kind="OutputPin" />
             <Pin Id="BtkDufHaMu7NHeDdrR98xG" Name="Is Connected" Kind="OutputPin" />
           </Node>
-          <Node Bounds="401,698,85,19" Id="GfzYQdvLOQ5OyqkDmAUoHc">
+          <Node Bounds="393,692,85,19" Id="GfzYQdvLOQ5OyqkDmAUoHc">
             <p:NodeReference LastCategoryFullName="IO.MQTT" LastSymbolSource="VL.IO.M2MQTT.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="MQTT" />
@@ -41,7 +43,7 @@
             <Pin Id="I6xP9l8F1XxM3ewejj17TV" Name="Retain" Kind="InputPin" />
             <Pin Id="NchwNFG4inSL6kq4XhFJvG" Name="Publish" Kind="InputPin" />
           </Node>
-          <Pad Id="ElysMm1twBaNQB3DdOXuev" Comment="Broker Host Name" Bounds="354,294,140,15" ShowValueBox="true" isIOBox="true" Value="broker.hivemq.com">
+          <Pad Id="ElysMm1twBaNQB3DdOXuev" Comment="Broker Host Name" Bounds="354,294,140,15" ShowValueBox="true" isIOBox="true" Value="broker.shiftr.io">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -61,17 +63,17 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TqdUVTlHZICP7l3oRlimHa" Comment="Topic" Bounds="424,581,81,15" ShowValueBox="true" isIOBox="true" Value="testtopic/1">
+          <Pad Id="TqdUVTlHZICP7l3oRlimHa" Comment="Topic" Bounds="416,569,56,16" ShowValueBox="true" isIOBox="true" Value="foo">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="O9jJBxCIPjQQcupoVWjwsV" Comment="" Bounds="444,625,35,15" ShowValueBox="true" isIOBox="true" Value="bar">
+          <Pad Id="O9jJBxCIPjQQcupoVWjwsV" Comment="Message" Bounds="436,613,35,15" ShowValueBox="true" isIOBox="true" Value="bar">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Bjpwko1itFjQCOs9SVjtnp" Comment="Publish" Bounds="480,658,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Bjpwko1itFjQCOs9SVjtnp" Comment="Publish" Bounds="472,646,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -79,8 +81,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="A9QnBXOCrk7N7cx7qUtEC9" Comment="Is Connected" Bounds="460,471,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="670,689,54,19" Id="A7QTB7kOrWSOJMDT1FaRaO">
+          <Pad Id="A9QnBXOCrk7N7cx7qUtEC9" Comment="Is Connected" Bounds="495,473,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="662,692,54,19" Id="A7QTB7kOrWSOJMDT1FaRaO">
             <p:NodeReference LastCategoryFullName="IO.MQTT" LastSymbolSource="VL.IO.M2MQTT.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Receiver" />
@@ -89,19 +91,23 @@
             <Pin Id="BqowWQcqvfXQIYTNdpy6lN" Name="Input" Kind="InputPin" />
             <Pin Id="EEWA4dn8Kl8QWEgBUrSpHS" Name="Topic" Kind="InputPin" />
             <Pin Id="DvrXfSXGOPyLXnNQeWGIPU" Name="Result" Kind="OutputPin" />
+            <Pin Id="SwITGACxs1mMIb2icvPB1E" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Node Bounds="671,754" Id="EaHyOKpQcnVOn1TQmDqIyf">
-            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
-            </p:NodeReference>
-            <Pin Id="UzU5hWpZngmLfHwkJcALFP" Name="Async Notifications" Kind="InputPin" />
-            <Pin Id="V1OzMzZsaS6LKtGQiSysFr" Name="Reset" Kind="InputPin" />
-            <Pin Id="VqOqYnXBSWiL3v9H1gjaEH" Name="Value" Kind="OutputPin" />
-            <Pin Id="GvHzv7q8kEjO4QgCpgqcAG" Name="On Data" Kind="OutputPin" />
-          </Node>
-          <Pad Id="C5ndYyuxQamK9sc9iHPHty" Comment="" Bounds="672,806,123,16" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="MMFhA9S7xqpPWaetmaQBxV" Comment="On Data" Bounds="819,804,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GClHwyZc5WiLQy7eIzjR8G" Comment="" Bounds="664,730,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="URLL3E7XcQ9OM2tLn7YUju" Comment="Username" Bounds="625,357,35,15" ShowValueBox="true" isIOBox="true" Value="try">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="E4zXOx9NAEPMbW7aOAauHY" Bounds="351,250,122,19" ShowValueBox="true" isIOBox="true" Value="https://shiftr.io/try">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="GUsazFg1H4eLoKT3wTx1Gl" Name="Create" />
         <Patch Id="GtlRcTZ7gYeMKoWQ1coRAa" Name="Update" />
@@ -120,12 +126,12 @@
         <Link Id="BlJk9Wy0ikOOZYx7QYgjwa" Ids="BtkDufHaMu7NHeDdrR98xG,A9QnBXOCrk7N7cx7qUtEC9" />
         <Link Id="SMGCEcCvTYKPUrIScCuOFp" Ids="BDlVxv3pGREL3e1dgCBRpq,BqowWQcqvfXQIYTNdpy6lN" />
         <Link Id="Bq4OVZqbNAmLD2pKu7nof2" Ids="TqdUVTlHZICP7l3oRlimHa,EEWA4dn8Kl8QWEgBUrSpHS" />
-        <Link Id="QXEn2zMV2kEN9kZ0R2TtEQ" Ids="DvrXfSXGOPyLXnNQeWGIPU,UzU5hWpZngmLfHwkJcALFP" />
-        <Link Id="GAswf4dN3yiN9cylbZKhJk" Ids="VqOqYnXBSWiL3v9H1gjaEH,C5ndYyuxQamK9sc9iHPHty" />
-        <Link Id="FBanEqK8CVkL6LxuUhewB1" Ids="GvHzv7q8kEjO4QgCpgqcAG,MMFhA9S7xqpPWaetmaQBxV" />
+        <Link Id="BFEpDFZa455Mjsxe9szeYB" Ids="DvrXfSXGOPyLXnNQeWGIPU,GClHwyZc5WiLQy7eIzjR8G" />
+        <Link Id="Rp8TQovQqoHLMBCy3p9dNX" Ids="URLL3E7XcQ9OM2tLn7YUju,H29gJe0xvJrOcKqIIu5UiL" />
+        <Link Id="O3VRnarZVlTQa4aYwXI4TP" Ids="URLL3E7XcQ9OM2tLn7YUju,GeBdP2312uBMEePOXiKszl" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BBdtf4DMQg7L25GzANEvDo" Location="VL.Skia" Version="2019.1.0-0624-g5df7a10830" />
+  <NugetDependency Id="BBdtf4DMQg7L25GzANEvDo" Location="VL.Skia" Version="2020.1.7" />
   <NugetDependency Id="GiRqnz5CWY7Ny5dJYhsqTk" Location="VL.IO.M2MQTT" Version="0.0.0.0" />
 </Document>
