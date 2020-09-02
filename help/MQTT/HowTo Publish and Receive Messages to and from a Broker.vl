@@ -22,6 +22,7 @@
               <CategoryReference Kind="Category" Name="MQTT" />
               <Choice Kind="ProcessAppFlag" Name="MQTTClient" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="G6TheAfw8k3LqtNZ047h0I" Name="Broker Host Name" Kind="InputPin" />
             <Pin Id="Sr9sZwKpDPDPh8U6uY5af3" Name="Broker Port" Kind="InputPin" />
             <Pin Id="OpkKgvMDaEkOv8yR7HxSTn" Name="Client Id" Kind="InputPin" />
@@ -37,6 +38,7 @@
               <CategoryReference Kind="Category" Name="MQTT" />
               <Choice Kind="ProcessAppFlag" Name="Publisher" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="QaHHUDjbNfUMBpUYR6DG9g" Name="Input" Kind="InputPin" />
             <Pin Id="VToKTu5QpnaNrPXmJXfpwk" Name="Topic" Kind="InputPin" />
             <Pin Id="J9pLWyEikkMLMZDxgbciCy" Name="Value" Kind="InputPin" />
@@ -88,12 +90,13 @@
               <Choice Kind="ProcessAppFlag" Name="Receiver" />
               <CategoryReference Kind="Category" Name="MQTT" NeedsToBeDirectParent="true" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="BqowWQcqvfXQIYTNdpy6lN" Name="Input" Kind="InputPin" />
             <Pin Id="EEWA4dn8Kl8QWEgBUrSpHS" Name="Topic" Kind="InputPin" />
             <Pin Id="DvrXfSXGOPyLXnNQeWGIPU" Name="Result" Kind="OutputPin" />
             <Pin Id="SwITGACxs1mMIb2icvPB1E" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Pad Id="GClHwyZc5WiLQy7eIzjR8G" Comment="" Bounds="664,760,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GClHwyZc5WiLQy7eIzjR8G" Comment="" Bounds="664,759,74,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="URLL3E7XcQ9OM2tLn7YUju" Comment="Username" Bounds="460,367,35,15" ShowValueBox="true" isIOBox="true" Value="try">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -108,7 +111,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="OTlPgLnYahYPyZKDRKxHy7" Comment="On Data" Bounds="730,756,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OTlPgLnYahYPyZKDRKxHy7" Comment="On Data" Bounds="762,759,45,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="HYkOX0UafAeM34RpqZs3le" Comment="Password" Bounds="460,386,35,15" ShowValueBox="true" isIOBox="true" Value="try">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
