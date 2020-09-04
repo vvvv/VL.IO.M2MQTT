@@ -648,7 +648,7 @@
         </p:NodeReference>
         <Patch Id="CYYfWE2D0oCMzM9jVQwadq" IsGeneric="true">
           <Canvas Id="RovQIwd6VMMOfiHHOFh1Ku" CanvasType="Group">
-            <ControlPoint Id="MF38AnYt1RYNzwrIBgjdVT" Bounds="638,638" />
+            <ControlPoint Id="MF38AnYt1RYNzwrIBgjdVT" Bounds="883,150" />
             <ControlPoint Id="B8b4iWCJ8DFPcdhnT9Zwq9" Bounds="305,156" />
             <ControlPoint Id="Gy2dhHbGv6ZPsvXBlBIp21" Bounds="422,156" />
             <ControlPoint Id="Hc3UTmJdrcxQaQrIRO6nIk" Bounds="517,156" />
@@ -737,7 +737,7 @@
                       <Pin Id="QsIVQMZYQRUPfm19QR1Vus" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="U1hckMIAJZXLQwlGpMyVT6" Name="Result" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="347,471,105,26" Id="BMfZjLAPuyOMgsMVc6B6JB">
+                    <Node Bounds="347,472,105,26" Id="BMfZjLAPuyOMgsMVc6B6JB">
                       <p:NodeReference LastCategoryFullName="uPLibrary.Networking.M2Mqtt.MqttClient" LastSymbolSource="M2Mqtt.dll">
                         <Choice Kind="OperationCallFlag" Name="Create" />
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -748,10 +748,18 @@
                       </p:NodeReference>
                       <Pin Id="MBdnEbX5YI3PeHnXA6dvxo" Name="Broker Host Name" Kind="InputPin" />
                       <Pin Id="GicMGBIoglxMTwPmbSvAYC" Name="Broker Port" Kind="InputPin" />
-                      <Pin Id="NAPMTzKiUhILLBfMh0LjUY" Name="Secure" Kind="InputPin" />
+                      <Pin Id="NAPMTzKiUhILLBfMh0LjUY" Name="Secure" Kind="InputPin">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="Boolean" />
+                        </p:TypeAnnotation>
+                      </Pin>
                       <Pin Id="Rg7kxJWbHW0M4xMcBD0fZy" Name="Ca Cert" Kind="InputPin" />
                       <Pin Id="VLLrUyyfBonLdW88KKWR3t" Name="Client Cert" Kind="InputPin" />
-                      <Pin Id="EPs3UqvtpP8QSKAhs5dBjp" Name="Ssl Protocol" Kind="InputPin" />
+                      <Pin Id="EPs3UqvtpP8QSKAhs5dBjp" Name="Ssl Protocol" Kind="InputPin">
+                        <p:TypeAnnotation LastCategoryFullName="uPLibrary.Networking.M2Mqtt" LastSymbolSource="M2Mqtt.dll">
+                          <Choice Kind="TypeFlag" Name="MqttSslProtocols" />
+                        </p:TypeAnnotation>
+                      </Pin>
                       <Pin Id="Dx1yK2wgACEMBz04faRy7r" Name="Output" Kind="StateOutputPin" />
                     </Node>
                   </Patch>
@@ -809,12 +817,12 @@
               <Pin Id="TBNDGEuMIM5LY4zCF0U7sn" Name="Input 2" Kind="InputPin" />
               <Pin Id="HWbvxhRgvw0NpVcxknVbvB" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Pad Id="IvwemCiFdjfPM1JBMdv5Fx" Comment="Dispose Cached Outputs" Bounds="624,240,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <Pad Id="IvwemCiFdjfPM1JBMdv5Fx" Comment="Dispose Cached Outputs" Bounds="630,246,35,15" ShowValueBox="true" isIOBox="true" Value="True">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="636,679,56,19" Id="SFYPNsU1MRaMHO66FJQgrc">
+            <Node Bounds="881,191,56,19" Id="SFYPNsU1MRaMHO66FJQgrc">
               <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="TogEdge" />
@@ -927,6 +935,7 @@
           <Link Id="Qjx4qzRQwUGNZhMZRtgzEq" Ids="MF38AnYt1RYNzwrIBgjdVT,GgiCE6SQPXYMlnHQH01KBb" />
           <Link Id="SeiYFAh63xROeZdhiZZvNC" Ids="Sn41O9ZMKCRLu3Fuk6RSqg,PfNPZbChiRtMV19fhfDFNy" />
           <Link Id="MwrKjt8Qae2NPd2hmtLjye" Ids="BI2G9TnN6SfLw3YDLdgdLu,FBJ9BB0KupKMsRljROtx3t" />
+          <Link Id="H2kQia8cDlgOuWj5s6iJz8" Ids="KAelscmI7JGK9vB94xiTHz,RcVMn773VrzNISlr9niyKN" />
         </Patch>
       </Node>
     </Canvas>
@@ -952,4 +961,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="KKBWZd43LwTPTq6f3fog5f" Location="M2MqttDotnetCore" Version="1.0.8" />
+  <PlatformDependency Id="PRIssxb4cY6L34MACh99HX" Location="System.Security.Cryptography.X509Certificates" />
 </Document>
