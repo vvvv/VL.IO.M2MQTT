@@ -15,9 +15,9 @@
         </p:NodeReference>
         <Patch Id="EOJU6xRodPIPucKJxipVFX" IsGeneric="true">
           <Canvas Id="UsHRUUBGggiM8vq4rBMLx4" CanvasType="Group">
-            <ControlPoint Id="LEiWvoL7InbLywWJyemIPE" Bounds="231,466" />
+            <ControlPoint Id="LEiWvoL7InbLywWJyemIPE" Bounds="162,371" />
             <ControlPoint Id="G8KTf0osbYrPBNF61dbCgo" Bounds="366,258" />
-            <Node Bounds="320,488,294,157" Id="SBZ7eHplZqpNdSlwNjJlf5">
+            <Node Bounds="320,488,135,157" Id="SBZ7eHplZqpNdSlwNjJlf5">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
               </p:NodeReference>
@@ -119,6 +119,7 @@
               <Pin Id="R2rPLaDkpKtOsl1iuswww7" Name="Input" Kind="StateInputPin" />
               <Pin Id="QmBg0UHKsk4PYHXa6mkJ0j" Name="Input 2" Kind="InputPin" />
               <Pin Id="KVVmRZt9QYsNjyKPttRDqs" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="Hu2QllsKE2SNOxTE7RQjKi" Name="Input 3" Kind="InputPin" />
             </Node>
             <Node Bounds="317,398,16,19" Id="JswLXYgt8KWOYU9RfFWrcJ">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
@@ -127,6 +128,15 @@
               </p:NodeReference>
               <Pin Id="IimU6BTghRUQD8K3fjIVbs" Name="Input" Kind="StateInputPin" />
               <Pin Id="MrZe20rKGHhPywaCLQ8iLG" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="237,400,65,19" Id="KVSEqhkwQ9kLyn85wbP7Ig">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+              </p:NodeReference>
+              <Pin Id="PFpQhp7ZjLOMXW7GZEXqqf" Name="X" Kind="InputPin" />
+              <Pin Id="DeHURSgTXKcPtdWMa8uJcH" Name="Result" Kind="OutputPin" />
+              <Pin Id="Pp752FIcXxUM0P7GEHkJEH" Name="Not Assigned" Kind="OutputPin" />
             </Node>
           </Canvas>
           <Patch Id="L9ilSClMXNQLphtHPbpOEA" Name="Create" />
@@ -144,7 +154,7 @@
           <Link Id="Nu08kWFNbC9OX3lR7sg3Hd" Ids="Rv4zMUCp0CoPSV71HGhXg5,LEiWvoL7InbLywWJyemIPE" IsHidden="true" />
           <Link Id="Kha3uWm8AjHQDmxfp2cKvF" Ids="RkYCjceLWuGQZDbIfCD14h,G8KTf0osbYrPBNF61dbCgo" IsHidden="true" />
           <Link Id="S2UKbDysZHYOIcNRtB9sVN" Ids="BQQD3JnQQpIOC6eu1rZA3h,Pn984McLMRRM0CYoxB6Ce0" />
-          <Link Id="VoCoGR95R4PPjbsjMt6q7h" Ids="LEiWvoL7InbLywWJyemIPE,AuHQdIQfwugQUTZB26MAmF" />
+          <Link Id="VoCoGR95R4PPjbsjMt6q7h" Ids="LEiWvoL7InbLywWJyemIPE,PFpQhp7ZjLOMXW7GZEXqqf" />
           <Link Id="PTsWokrWgZ6POwoTRuMi1H" Ids="G8KTf0osbYrPBNF61dbCgo,LNlMkzbKd5IOiJwYLVNV0g" />
           <Link Id="RJWJb3JmlYjMBACXY6DYou" Ids="NC5E8ggLIfDMTecpcFaLNd,NUlyJCtqh65Pl8eAxsZKBZ" />
           <Link Id="AMmdKOYVpneOCTrCW6s4iS" Ids="LJaSJzodRCNOSXFuyoaiiE,NC5E8ggLIfDMTecpcFaLNd" IsHidden="true" />
@@ -159,8 +169,10 @@
           <Link Id="FxmptxJkLEPNKyEeXJ05u7" Ids="LoALpuM5LI4LcLN607doFB,Hz2DQOkNVaSPvHG0hrWCWd" />
           <Link Id="IPJ0hHNP8wCPc4bvvsv4u7" Ids="KVVmRZt9QYsNjyKPttRDqs,RjYVjwqJ5LkPnQMuX4fg5f" />
           <Link Id="OCulAMZ8AOwN89wovopJC4" Ids="FKZdn4EDNbbQMziWR18yN3,IimU6BTghRUQD8K3fjIVbs" />
-          <Link Id="IGMHp1kCuRoOwccAbeshx2" Ids="FF582MrZAy8MbysSDisGR6,QmBg0UHKsk4PYHXa6mkJ0j" />
-          <Link Id="JpoNabJ86EfMbv4m4aRtsC" Ids="MrZe20rKGHhPywaCLQ8iLG,R2rPLaDkpKtOsl1iuswww7" />
+          <Link Id="DpNPwUgx1g4MPt8ymmBHfp" Ids="DeHURSgTXKcPtdWMa8uJcH,R2rPLaDkpKtOsl1iuswww7" />
+          <Link Id="CCCExcdg3UGOnDY0iqKMrp" Ids="MrZe20rKGHhPywaCLQ8iLG,QmBg0UHKsk4PYHXa6mkJ0j" />
+          <Link Id="KMYuCLGrYgELMMVRWoIFzM" Ids="FF582MrZAy8MbysSDisGR6,Hu2QllsKE2SNOxTE7RQjKi" />
+          <Link Id="CejuJMJp3zDOxKpNJfSapJ" Ids="LEiWvoL7InbLywWJyemIPE,AuHQdIQfwugQUTZB26MAmF" />
         </Patch>
       </Node>
       <!--
