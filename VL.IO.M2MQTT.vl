@@ -58,7 +58,7 @@
             </Node>
             <ControlPoint Id="NC5E8ggLIfDMTecpcFaLNd" Bounds="410,257" />
             <ControlPoint Id="UXVjhOy7u7EOfY4Z5ln8lF" Bounds="462,257" />
-            <ControlPoint Id="FF582MrZAy8MbysSDisGR6" Bounds="564,337" />
+            <ControlPoint Id="FF582MrZAy8MbysSDisGR6" Bounds="684,331" />
             <Node Bounds="317,299,56,26" Id="TmtiSkUUQOCOQ30Z2hZv3Z">
               <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -110,6 +110,7 @@
               <Pin Id="OZMyUNdEsCTQJz7myVjxMJ" Name="Input 2" Kind="InputPin" />
               <Pin Id="FKZdn4EDNbbQMziWR18yN3" Name="Output" Kind="StateOutputPin" />
               <Pin Id="Hz2DQOkNVaSPvHG0hrWCWd" Name="Input 3" Kind="InputPin" />
+              <Pin Id="TiVKv1M8VtLLSMOYLCJzti" Name="Input 4" Kind="InputPin" />
             </Node>
             <Node Bounds="317,442,37,19" Id="SO4Y2MmSqkYLCgJuWol1Z6">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
@@ -137,6 +138,14 @@
               <Pin Id="PFpQhp7ZjLOMXW7GZEXqqf" Name="X" Kind="InputPin" />
               <Pin Id="DeHURSgTXKcPtdWMa8uJcH" Name="Result" Kind="OutputPin" />
               <Pin Id="Pp752FIcXxUM0P7GEHkJEH" Name="Not Assigned" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="547,306,104,19" Id="RjDJS0TY4B9Pzw14DjIJTd">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsNullOrWhiteSpace" />
+              </p:NodeReference>
+              <Pin Id="E3aRJ80CWvaO8ohpqLjPqf" Name="Input" Kind="StateInputPin" />
+              <Pin Id="MQU4ohpI6ZmPnvh7RcN7WO" Name="Result" Kind="OutputPin" />
             </Node>
           </Canvas>
           <Patch Id="L9ilSClMXNQLphtHPbpOEA" Name="Create" />
@@ -173,6 +182,8 @@
           <Link Id="CCCExcdg3UGOnDY0iqKMrp" Ids="MrZe20rKGHhPywaCLQ8iLG,QmBg0UHKsk4PYHXa6mkJ0j" />
           <Link Id="KMYuCLGrYgELMMVRWoIFzM" Ids="FF582MrZAy8MbysSDisGR6,Hu2QllsKE2SNOxTE7RQjKi" />
           <Link Id="CejuJMJp3zDOxKpNJfSapJ" Ids="LEiWvoL7InbLywWJyemIPE,AuHQdIQfwugQUTZB26MAmF" />
+          <Link Id="ShZPeNaaAQ6O1DC0dGWgOI" Ids="G8KTf0osbYrPBNF61dbCgo,E3aRJ80CWvaO8ohpqLjPqf" />
+          <Link Id="Dh2dVXBYyuzL2sVoCm36PG" Ids="MQU4ohpI6ZmPnvh7RcN7WO,TiVKv1M8VtLLSMOYLCJzti" />
         </Patch>
       </Node>
       <!--
