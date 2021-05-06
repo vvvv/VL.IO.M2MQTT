@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Di4DgpVsnefPCkBy6qkSvX" LanguageVersion="2020.1.7.184" Version="0.128">
-  <NugetDependency Id="GGdvarIkyvWLkjpBypCkU8" Location="VL.CoreLib" Version="2020.1.7" />
+<Document xmlns:p="property" Id="Di4DgpVsnefPCkBy6qkSvX" LanguageVersion="2021.3.2.109" Version="0.128">
+  <NugetDependency Id="GGdvarIkyvWLkjpBypCkU8" Location="VL.CoreLib" Version="2021.3.2" />
   <Patch Id="A8Lw1Itg23GNlwVmJzfWih">
     <Canvas Id="VBK5MeZr5m4OVcxFNC3seY" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -45,7 +45,7 @@
             <Pin Id="I6xP9l8F1XxM3ewejj17TV" Name="Retain" Kind="InputPin" />
             <Pin Id="NchwNFG4inSL6kq4XhFJvG" Name="Publish" Kind="InputPin" />
           </Node>
-          <Pad Id="ElysMm1twBaNQB3DdOXuev" Comment="Broker Host Name" Bounds="354,294,140,15" ShowValueBox="true" isIOBox="true" Value="broker.shiftr.io">
+          <Pad Id="ElysMm1twBaNQB3DdOXuev" Comment="Broker Host Name" Bounds="354,294,140,15" ShowValueBox="true" isIOBox="true" Value="broker.hivemq.com">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -60,7 +60,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="NusvtgYdjJ8NEwFT3PU1tR" Comment="Enabled" Bounds="495,426,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="NusvtgYdjJ8NEwFT3PU1tR" Comment="Enabled" Bounds="495,426,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -75,7 +75,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Bjpwko1itFjQCOs9SVjtnp" Comment="Publish" Bounds="472,676,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Bjpwko1itFjQCOs9SVjtnp" Comment="Publish" Bounds="475,682,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -101,15 +101,6 @@
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="E4zXOx9NAEPMbW7aOAauHY" Bounds="351,250,122,19" ShowValueBox="true" isIOBox="true" Value="https://shiftr.io/try">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
-            </p:ValueBoxSettings>
           </Pad>
           <Pad Id="OTlPgLnYahYPyZKDRKxHy7" Comment="On Data" Bounds="762,759,45,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="HYkOX0UafAeM34RpqZs3le" Comment="Password" Bounds="460,386,35,15" ShowValueBox="true" isIOBox="true" Value="try">
@@ -142,6 +133,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BBdtf4DMQg7L25GzANEvDo" Location="VL.Skia" Version="2020.1.7" />
+  <NugetDependency Id="BBdtf4DMQg7L25GzANEvDo" Location="VL.Skia" Version="2021.3.2" />
   <NugetDependency Id="GiRqnz5CWY7Ny5dJYhsqTk" Location="VL.IO.M2MQTT" Version="0.0.0.0" />
 </Document>
