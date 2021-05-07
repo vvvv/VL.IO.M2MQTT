@@ -6,7 +6,7 @@
     <title>VL.IO.M2MQTT</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
-    <projectUrl>http://vvvv.org</projectUrl>
+    <projectUrl>https://github.com/vvvv/VL.IO.M2MQTT</projectUrl>
     <repository type="git" url="https://github.com/vvvv/VL.IO.M2MQTT"/>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>An MQTT client for VL</summary>
