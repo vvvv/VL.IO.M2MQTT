@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="NCBdlWKQIQpLmisTUBLs01" LanguageVersion="2021.3.2.109" Version="0.128">
-  <NugetDependency Id="JZO3C67a2DZLbGXEXUVFB4" Location="VL.CoreLib" Version="2021.3.2" />
+<Document xmlns:p="property" Id="NCBdlWKQIQpLmisTUBLs01" LanguageVersion="2021.3.3.130" Version="0.128">
+  <NugetDependency Id="JZO3C67a2DZLbGXEXUVFB4" Location="VL.CoreLib" Version="2021.3.3-0130-g7032efe820" />
   <Patch Id="BluWOhi8YmVLLC5CQCIdgB">
     <Canvas Id="GjTMeg8WS3aQcV09yATIUc" DefaultCategory="IO.MQTT" CanvasType="FullCategory">
       <!--
@@ -252,6 +252,11 @@
           <Choice Kind="ClassDefinition" Name="Class" />
           <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
+        <p:Interfaces>
+          <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <Choice Kind="MutableInterfaceType" Name="IDisposable" />
+          </TypeReference>
+        </p:Interfaces>
         <Patch Id="TFEZyPzfeGBLBQa5pHosMY" IsGeneric="true">
           <Canvas Id="Sb6gjFLfWItLHUpq21d1mI" CanvasType="Group">
             <ControlPoint Id="Ommw9sas8R6NVfrsRkHaHS" Bounds="883,150" />
@@ -953,6 +958,37 @@
               </Patch>
             </Node>
             <Pad Id="EusBSspww1pMdMZh7JJDB2" SlotId="GF0cf1vhZokNNR3BN5ttDB" Bounds="1152,1054" />
+            <Node Bounds="707,778,99,73" Id="G8gnvRjq47XLVAZiNpLN1b">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Pin Id="J3ltBQcABTpNOedS5YvFJh" Name="Condition" Kind="InputPin" />
+              <Patch Id="Mk8HKU0lpdDMIqzckbCwHw" ManuallySortedPins="true">
+                <Patch Id="N86VQmTm1bqM6j8Bah0noo" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="KpZmfwHQr5lPn1TZJ4aQJy" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="722,802,72,26" Id="Bp6xH9z6UQfLol2J0LI1lb">
+                  <p:NodeReference LastCategoryFullName="uPLibrary.Networking.M2Mqtt.MqttClient" LastSymbolSource="M2Mqtt.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Disconnect" />
+                  </p:NodeReference>
+                  <Pin Id="AtkYUkI0fmwMN5NdpVMLhu" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="FgZfrqVjBY1LKG5s108tn2" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="BdMn74EecqZLVEsOZ8B4oK" Bounds="724,784" Alignment="Top" />
+              <ControlPoint Id="BLgeWbLSLorQOvU6ESkMXy" Bounds="721,846" Alignment="Bottom" />
+            </Node>
+            <Node Bounds="707,736,65,19" Id="GrOyzYqpzBhNmgXZ0aIQeP">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+              </p:NodeReference>
+              <Pin Id="DsNf5bzgdRqNwQDXaVzLKB" Name="X" Kind="InputPin" />
+              <Pin Id="C5tqeGSGKexPxkt0VdZFzJ" Name="Result" Kind="OutputPin" />
+              <Pin Id="VNecm2sg4MGOVS1HlizwWr" Name="Not Assigned" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <Patch Id="KuONvMS5Y0zOcmuN8CQeLF" Name="Create" ParticipatingElements="S7MZl33j9t4Oa3uMlZTLVD" />
           <Patch Id="SgoSZHcFAeHN23X2KVnELH" Name="Update" ManuallySortedPins="true">
@@ -1096,6 +1132,12 @@
           <Link Id="StsJEmOZQNFNxdhxKzqw7P" Ids="O9p3Ck1nyDuN2J8Bnix1rG,EvHCewFUJcwM2c3eHW3KNZ" />
           <Link Id="IJSDPCROAwJP3ow8FhShPv" Ids="BKxDprfrb1PNVGxuvc1ogw,JbQ2MRrDpE0OqWnKAi0SBX" />
           <Link Id="QNW7GDCpRnVLzP3boDPMdG" Ids="O9p3Ck1nyDuN2J8Bnix1rG,TQbBZMsRJ8jOgPzXkA1CcY" />
+          <Link Id="ILGK6FQmrxRP8nGkC1BWlK" Ids="BdMn74EecqZLVEsOZ8B4oK,BLgeWbLSLorQOvU6ESkMXy" IsFeedback="true" />
+          <Link Id="JB5blWDBhryNKqSAHEnAIP" Ids="BdMn74EecqZLVEsOZ8B4oK,AtkYUkI0fmwMN5NdpVMLhu" />
+          <Link Id="MZ3x6QzdzRYPqPTDj2uCrn" Ids="IvntBMQdUr2QNbgrkEglyI,DsNf5bzgdRqNwQDXaVzLKB" />
+          <Link Id="CR4DpPdm8osO9rrrMgC3ar" Ids="C5tqeGSGKexPxkt0VdZFzJ,J3ltBQcABTpNOedS5YvFJh" />
+          <Link Id="LaFfmry2bkPOr4rUDnQdB2" Ids="IvntBMQdUr2QNbgrkEglyI,BdMn74EecqZLVEsOZ8B4oK" />
+          <Patch Id="QgRCxMaTP64MjhNVBHQJFv" Name="Dispose" ParticipatingElements="LaFfmry2bkPOr4rUDnQdB2" />
         </Patch>
       </Node>
       <!--
