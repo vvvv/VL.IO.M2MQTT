@@ -1295,7 +1295,7 @@
           <Canvas Id="Dx2Hqgau2iFPw0wx4TyZ6n" CanvasType="Group">
             <ControlPoint Id="A7Ff16nZcXeMQiD32X78zC" Bounds="248,495" />
             <ControlPoint Id="Vt7oDJyt85uQLdVCxGf5b0" Bounds="383,263" />
-            <Node Bounds="314,610,109,80" Id="LeG1mFN9PcBQACt1d4dlR1">
+            <Node Bounds="315,605,155,115" Id="LeG1mFN9PcBQACt1d4dlR1">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
               </p:NodeReference>
@@ -1303,7 +1303,7 @@
               <Patch Id="UcTAO5lzHlXPWa8HVapkHg" ManuallySortedPins="true">
                 <Patch Id="K17nrF97O3gOWzcwzNbCE6" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Df8nxO6kYSOLniZO3FwzJd" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="326,638,85,26" Id="OSQab2BHVt3NR5HjoImMJK">
+                <Node Bounds="327,674,85,26" Id="OSQab2BHVt3NR5HjoImMJK">
                   <p:NodeReference LastCategoryFullName="uPLibrary.Networking.M2Mqtt.MqttClient" LastSymbolSource="M2Mqtt.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Publish" />
@@ -1316,6 +1316,15 @@
                   <Pin Id="Qr908Oq7QpWNg2NYRbpbGT" Name="Retain" Kind="InputPin" />
                   <Pin Id="IOpQ7CPEPLWM0SwJ9W1Bv5" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="PUhtSAJoHkdNVN00QnM3C4" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="375,628,83,26" Id="MwnCUaqlUToPxjpAizkG88">
+                  <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="M65slXRDWXMQSzkvUXVcJH" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="V4VbwkbZBeVQa3i5dUtuT4" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>
@@ -1438,16 +1447,26 @@
           <Link Id="FkmTk8f83efOQQZaNJao2h" Ids="A7Ff16nZcXeMQiD32X78zC,VAiJ7zVTvMPLbW1eimPw3I" />
           <Link Id="FsVjR3TprHoNqrMKwEw3hm" Ids="SOKHmxdMRHELfKrGBW8FD2,HCpSPGRNmtpQWtygQrv26v" />
           <Link Id="Oi8ETlJ5BiZQTKbdE0Mdvw" Ids="AtYh7MRyvZ9PHF1aJ0sIdp,EiQHtcwnwCHL3GauLrawyk" />
-          <Link Id="Pq9syYXSfelNEWDzhhDSwE" Ids="EQTBhrmhex0O8fF0PKetP0,RjAZNVSj3RtMDTvBalaVkp" />
+          <Link Id="Pq9syYXSfelNEWDzhhDSwE" Ids="EQTBhrmhex0O8fF0PKetP0,M65slXRDWXMQSzkvUXVcJH" />
           <Link Id="QhAqJTXThtqLuuS2BWYjiZ" Ids="BLeCvz5E6rhMllyIw5QEu3,EQTBhrmhex0O8fF0PKetP0" IsHidden="true" />
           <Patch Id="FGYaOJ32cXgLRD9tCzJiJY" Name="Create" />
           <Patch Id="EjKOuwpLnQVPG8dp1js9GA" Name="Update">
             <Pin Id="GkVVoayV2DAQOBeeZK8mLJ" Name="Input" Kind="InputPin" />
             <Pin Id="OiqVsQxJnmxQZ1tYdPI7d1" Name="Topic" Kind="InputPin" />
-            <Pin Id="BLeCvz5E6rhMllyIw5QEu3" Name="Message" Kind="InputPin" Bounds="414,578" />
+            <Pin Id="BLeCvz5E6rhMllyIw5QEu3" Name="Message" Kind="InputPin" Bounds="414,578">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Sequence" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="Byte" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="NANf3OAvjTUPUwVlRm4WdZ" Name="Retain" Kind="InputPin" Bounds="645,122" />
             <Pin Id="MHuPcrlO5BmMmLtmcXXVCT" Name="Publish" Kind="InputPin" Bounds="341,75" DefaultValue="False" />
           </Patch>
+          <Link Id="AW1QADCbxTIPbuwJnTfJM4" Ids="V4VbwkbZBeVQa3i5dUtuT4,RjAZNVSj3RtMDTvBalaVkp" />
         </Patch>
       </Node>
     </Canvas>
