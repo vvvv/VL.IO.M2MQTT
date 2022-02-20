@@ -247,7 +247,7 @@
     ************************ MQTTClient ************************
 
 -->
-      <Node Name="MQTTClient" Bounds="274,279" Id="QykeBuDX3rQNHTTwMf2FSH">
+      <Node Name="MQTTClient" Aspects="Internal" Bounds="274,279" Id="QykeBuDX3rQNHTTwMf2FSH">
         <p:NodeReference>
           <Choice Kind="ClassDefinition" Name="Class" />
           <FullNameCategoryReference ID="Primitive" />
@@ -257,7 +257,7 @@
             <Choice Kind="MutableInterfaceType" Name="IDisposable" />
           </TypeReference>
         </p:Interfaces>
-        <Patch Id="TFEZyPzfeGBLBQa5pHosMY" IsGeneric="true">
+        <Patch Id="TFEZyPzfeGBLBQa5pHosMY">
           <Canvas Id="Sb6gjFLfWItLHUpq21d1mI" CanvasType="Group">
             <ControlPoint Id="Ommw9sas8R6NVfrsRkHaHS" Bounds="872,3" />
             <ControlPoint Id="BkxeKAwrfwIN0Zmz4uXZqE" Bounds="366,31" />
@@ -543,10 +543,10 @@
             </Node>
             <!--
 
-    ************************ UpdateSubscriptions ************************
+    ************************ UpdateSubscriptions (Internal) ************************
 
 -->
-            <Node Name="UpdateSubscriptions" Bounds="1402,141,614,614" Id="TRha23SlaVyQcEW43qmDhX">
+            <Node Name="UpdateSubscriptions (Internal)" Bounds="1402,141,614,614" Id="TRha23SlaVyQcEW43qmDhX">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
