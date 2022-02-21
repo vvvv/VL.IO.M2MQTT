@@ -42,6 +42,7 @@
             <Pin Id="QaHHUDjbNfUMBpUYR6DG9g" Name="Input" Kind="InputPin" />
             <Pin Id="VToKTu5QpnaNrPXmJXfpwk" Name="Topic" Kind="InputPin" />
             <Pin Id="J9pLWyEikkMLMZDxgbciCy" Name="Message" Kind="InputPin" />
+            <Pin Id="QO3jJlOmbALNgdUmb1SgKn" Name="Encoding" Kind="InputPin" />
             <Pin Id="I6xP9l8F1XxM3ewejj17TV" Name="Retain" Kind="InputPin" />
             <Pin Id="NchwNFG4inSL6kq4XhFJvG" Name="Publish" Kind="InputPin" />
           </Node>
@@ -65,17 +66,17 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TqdUVTlHZICP7l3oRlimHa" Comment="Topic" Bounds="341,449,56,16" ShowValueBox="true" isIOBox="true" Value="foo/bar">
+          <Pad Id="TqdUVTlHZICP7l3oRlimHa" Comment="Topic" Bounds="340,449,56,16" ShowValueBox="true" isIOBox="true" Value="foo/bar">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="O9jJBxCIPjQQcupoVWjwsV" Comment="Message" Bounds="361,493,35,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
+          <Pad Id="O9jJBxCIPjQQcupoVWjwsV" Comment="Message" Bounds="360,493,35,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Bjpwko1itFjQCOs9SVjtnp" Comment="Publish" Bounds="400,575,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Bjpwko1itFjQCOs9SVjtnp" Comment="Publish" Bounds="420,577,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -93,6 +94,7 @@
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="BqowWQcqvfXQIYTNdpy6lN" Name="Input" Kind="InputPin" />
             <Pin Id="EEWA4dn8Kl8QWEgBUrSpHS" Name="Topic" Kind="InputPin" />
+            <Pin Id="ALw6cllEVmwQAbLDTJ5yR1" Name="Encoding" Kind="InputPin" />
             <Pin Id="DvrXfSXGOPyLXnNQeWGIPU" Name="Result" Kind="OutputPin" />
             <Pin Id="SwITGACxs1mMIb2icvPB1E" Name="On Data" Kind="OutputPin" />
           </Node>
@@ -117,7 +119,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Aaf4ffqzY1qNvf1UyhpuqP" Comment="Retain" Bounds="380,531,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Aaf4ffqzY1qNvf1UyhpuqP" Comment="Retain" Bounds="400,539,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
