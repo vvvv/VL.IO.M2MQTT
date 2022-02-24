@@ -8,7 +8,7 @@
     ************************ Receiver ************************
 
 -->
-      <Node Name="Receiver" Bounds="273,453" Id="O1gHYWP0IQ7MAy5KI7ZDUD">
+      <Node Name="Receiver" Bounds="273,453" Id="O1gHYWP0IQ7MAy5KI7ZDUD" Summary="Receives text messages" Tags="subscriber">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -71,7 +71,7 @@
     ************************ Receiver (Reactive) ************************
 
 -->
-      <Node Name="Receiver (Reactive)" Bounds="273,413" Id="IJh9SfqIVKLNlNpgXrWGz8">
+      <Node Name="Receiver (Reactive)" Bounds="273,413" Id="IJh9SfqIVKLNlNpgXrWGz8" Summary="Receives text messages on a background thread" Tags="subscriber">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -151,7 +151,7 @@
     ************************ MQTTClient ************************
 
 -->
-      <Node Name="MQTTClient" Aspects="Internal" Bounds="273,279" Id="QykeBuDX3rQNHTTwMf2FSH">
+      <Node Name="MQTTClient" Aspects="Internal" Bounds="273,279" Id="QykeBuDX3rQNHTTwMf2FSH" Summary="The MQTT client that connects to a broker" Remarks="Does not support wildcards in topics!">
         <p:NodeReference>
           <Choice Kind="ClassDefinition" Name="Class" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1115,7 +1115,7 @@
     ************************ Publisher ************************
 
 -->
-      <Node Name="Publisher" Bounds="273,548" Id="Kudj6XtHA8PQE7HwZM1p2E">
+      <Node Name="Publisher" Bounds="273,548" Id="Kudj6XtHA8PQE7HwZM1p2E" Summary="Publishes text messages">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1194,7 +1194,7 @@
     ************************ Publisher (Bytes) ************************
 
 -->
-      <Node Name="Publisher (Bytes)" Bounds="273,504" Id="KiAhxT3Ip6BMYq2JvNCnyR">
+      <Node Name="Publisher (Bytes)" Bounds="273,504" Id="KiAhxT3Ip6BMYq2JvNCnyR" Summary="Publishes raw byte messages">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1382,7 +1382,7 @@
     ************************ Receiver (Bytes Reactive) ************************
 
 -->
-      <Node Name="Receiver (Bytes Reactive)" Bounds="273,321" Id="LLjZozLvx6lNAp0gOxxGtg">
+      <Node Name="Receiver (Bytes Reactive)" Bounds="273,321" Id="LLjZozLvx6lNAp0gOxxGtg" Summary="Receives raw byte messages on a background thread" Tags="subscriber">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1426,7 +1426,7 @@
                     </Patch>
                     <ControlPoint Id="S6pbAznjXasLUpbcTnK9cT" Bounds="338,461" />
                     <ControlPoint Id="FDiPx4jnC72PfWPOsCq8Vo" Bounds="439,593" />
-                    <Node Bounds="340,486,62,26" Id="AbwPmeld4DCMNJofMxbPTB">
+                    <Node Bounds="336,485,62,26" Id="AbwPmeld4DCMNJofMxbPTB">
                       <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.DevLib.Reactive.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="TypeFlag" Name="EventPattern" />
@@ -1553,7 +1553,7 @@
     ************************ Receiver (Bytes) ************************
 
 -->
-      <Node Name="Receiver (Bytes)" Bounds="274,362" Id="Fnm68LYAAI2OKxTDbnh9hU">
+      <Node Name="Receiver (Bytes)" Bounds="274,362" Id="Fnm68LYAAI2OKxTDbnh9hU" Summary="Receives raw byte messages" Tags="subscriber">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
