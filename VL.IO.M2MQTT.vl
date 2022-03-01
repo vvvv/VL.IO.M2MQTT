@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="NCBdlWKQIQpLmisTUBLs01" LanguageVersion="2021.4.6.835" Version="0.128">
-  <NugetDependency Id="JZO3C67a2DZLbGXEXUVFB4" Location="VL.CoreLib" Version="2021.4.6" />
+<Document xmlns:p="property" Id="NCBdlWKQIQpLmisTUBLs01" LanguageVersion="2021.4.7.906" Version="0.128">
+  <NugetDependency Id="JZO3C67a2DZLbGXEXUVFB4" Location="VL.CoreLib" Version="2021.4.7" />
   <Patch Id="BluWOhi8YmVLLC5CQCIdgB">
     <Canvas Id="GjTMeg8WS3aQcV09yATIUc" DefaultCategory="IO.MQTT" CanvasType="FullCategory">
       <!--
@@ -171,7 +171,7 @@
             <ControlPoint Id="PAWR5zVToz5MR1DMwkqsRC" Bounds="529,929" />
             <ControlPoint Id="RRAdP8bcJGmMAbKDmQGHsx" Bounds="643,31" />
             <ControlPoint Id="Cq0mipQQqkBOIBMbITieYf" Bounds="730,32" />
-            <Node Bounds="342,83,314,173" Id="DiujpV1AniENeTgoqsSGFO">
+            <Node Bounds="342,72,314,185" Id="DiujpV1AniENeTgoqsSGFO">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -225,6 +225,14 @@
                   <Pin Id="VkA6AgYdUWENwEoCyfvADb" Name="Input" Kind="StateInputPin" />
                   <Pin Id="A2YXCNGfDi9MHQfbimPmdO" Name="Input 2" Kind="InputPin" />
                   <Pin Id="OgpVvXpZ7VXLJqLkHm12QK" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="354,95,38,26" Id="E8wZUUzSN3aMFNLDTwqvCm">
+                  <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Trim" />
+                  </p:NodeReference>
+                  <Pin Id="J7WTQUd2uSXOYqP8r4Irry" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="QF4YIIhKPiJLgB87GOhpVj" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
               <ControlPoint Id="HEhL4hgDlWfLSCzGotSwis" Bounds="362,251" Alignment="Bottom" />
@@ -990,7 +998,7 @@
           <Link Id="L5QdZIKmSHgOzeFXPu8pYy" Ids="KrSeBETeqbQOopji6bD9XY,U2xoa3iDE4AMAKLVXOnTVH" />
           <Link Id="Qutc3the0ZtLf0y3whBBHP" Ids="ABDTYQGkptDOOc1cnzpVkx,VkA6AgYdUWENwEoCyfvADb" />
           <Link Id="OUtIuuKNWtZPjRmGdr51Yx" Ids="EIyKGD655iqNVFBx77crWX,A2YXCNGfDi9MHQfbimPmdO" />
-          <Link Id="VK9UPn4IAVKOD5SLmCzRs6" Ids="S9LVbGsxyHZNI8Ny6f57So,Hl47j6AnXyGMYQH29gf8Zr" />
+          <Link Id="VK9UPn4IAVKOD5SLmCzRs6" Ids="S9LVbGsxyHZNI8Ny6f57So,J7WTQUd2uSXOYqP8r4Irry" />
           <Link Id="VsbAxxoLKgZQAzl8LLRi5K" Ids="BkxeKAwrfwIN0Zmz4uXZqE,S9LVbGsxyHZNI8Ny6f57So" />
           <Link Id="Pdudd42gd4oMndxB53SjYt" Ids="F8garbEMw27LKc3oRespUB,Jqc0fAk91BaNs0auki5nCs" />
           <Link Id="SIBPKtiUTdYPhXoBX0w08J" Ids="Jqc0fAk91BaNs0auki5nCs,NLEXMdNB4C8QTdgklQEnhB" />
@@ -1108,6 +1116,7 @@
           <Link Id="EJKrVtW5YAqNYJzYDL4b4W" Ids="CmtPAJuIwWxL9sm71pnE3o,SPZJLWXeesgMP6pr5EdRpm" />
           <Link Id="CjClScgToHTNyOWPOjo427" Ids="Uejx60L6uyUL57Sp5VVvt6,K9vZfrPofJNLl5N8r5yVGX" />
           <Link Id="LMXWLURdEHeLeMaBU33TcE" Ids="K9vZfrPofJNLl5N8r5yVGX,SuQrv3xQvrtMm5LrOgo6J6" />
+          <Link Id="K3FWwyc2h5gLOeYgYSVJ5l" Ids="QF4YIIhKPiJLgB87GOhpVj,Hl47j6AnXyGMYQH29gf8Zr" />
         </Patch>
       </Node>
       <!--
