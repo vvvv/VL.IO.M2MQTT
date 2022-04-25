@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="NCBdlWKQIQpLmisTUBLs01" LanguageVersion="2021.4.8.947" Version="0.128">
-  <NugetDependency Id="JZO3C67a2DZLbGXEXUVFB4" Location="VL.CoreLib" Version="2021.4.8" />
+<Document xmlns:p="property" Id="NCBdlWKQIQpLmisTUBLs01" LanguageVersion="2021.4.9.961" Version="0.128">
+  <NugetDependency Id="JZO3C67a2DZLbGXEXUVFB4" Location="VL.CoreLib" Version="2021.4.9-0961-ga26e6ec306" />
   <Patch Id="BluWOhi8YmVLLC5CQCIdgB">
     <Canvas Id="GjTMeg8WS3aQcV09yATIUc" DefaultCategory="IO.MQTT" CanvasType="FullCategory">
       <!--
@@ -82,9 +82,9 @@
             <ControlPoint Id="TbuwiCwKu4QM7rytlMz7mT" Bounds="394,417" />
             <ControlPoint Id="H4KZO6fH3xSMkDD5SxubLa" Bounds="394,197" />
             <Node Bounds="392,232,54,19" Id="UjxNRy61QCPLXRldavfOUZ">
-              <p:NodeReference LastCategoryFullName="IO.MQTT" LastSymbolSource="VL.IO.M2MQTT.vl">
+              <p:NodeReference>
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Receiver (Bytes Reactive)" />
+                <Choice Kind="ProcessAppFlag" Name="Receiver (Reactive)" />
               </p:NodeReference>
               <Pin Id="UYAJXTdMfnRNvwM79rE2uY" Name="Input" Kind="InputPin" />
               <Pin Id="MZDw689gCnCPEbRcGMZV59" Name="Topic" Kind="InputPin" />
@@ -1414,10 +1414,10 @@
       </Node>
       <!--
 
-    ************************ Receiver (Bytes Reactive) ************************
+    ************************ Receiver (Reactive) ************************
 
 -->
-      <Node Name="Receiver (Bytes Reactive)" Bounds="273,321" Id="LLjZozLvx6lNAp0gOxxGtg" Summary="Receives raw byte messages on a background thread" Tags="subscriber">
+      <Node Name="Receiver (Reactive)" Bounds="273,321" Id="LLjZozLvx6lNAp0gOxxGtg" Summary="Receives raw byte messages on a background thread" Tags="subscriber">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1585,10 +1585,10 @@
       </Node>
       <!--
 
-    ************************ Receiver (Bytes) ************************
+    ************************ Receiver ************************
 
 -->
-      <Node Name="Receiver (Bytes)" Bounds="274,362" Id="Fnm68LYAAI2OKxTDbnh9hU" Summary="Receives raw byte messages" Tags="subscriber">
+      <Node Name="Receiver" Bounds="274,362" Id="Fnm68LYAAI2OKxTDbnh9hU" Summary="Receives raw byte messages" Tags="subscriber">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1610,9 +1610,9 @@
             </Node>
             <ControlPoint Id="QixylFPrNUJMU8wjSwRKiF" Bounds="621,392" />
             <Node Bounds="528,265,54,19" Id="OoAyPput8NTNqDZyi83DqA">
-              <p:NodeReference LastCategoryFullName="IO.MQTT" LastSymbolSource="VL.IO.M2MQTT.vl">
+              <p:NodeReference>
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Receiver (Bytes Reactive)" />
+                <Choice Kind="ProcessAppFlag" Name="Receiver (Reactive)" />
               </p:NodeReference>
               <Pin Id="HOLlCVbKW6cLv0CH87yICB" Name="Input" Kind="InputPin" />
               <Pin Id="JY8CBbLvrOhMz3Yix1hkOg" Name="Topic" Kind="InputPin" />
