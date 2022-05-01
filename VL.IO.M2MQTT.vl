@@ -1417,7 +1417,7 @@
     ************************ Receiver (Reactive) ************************
 
 -->
-      <Node Name="Receiver (Reactive)" Bounds="273,321" Id="LLjZozLvx6lNAp0gOxxGtg" Summary="Receives raw byte messages on a background thread" Tags="subscriber">
+      <Node Name="Receiver (Reactive)" Bounds="273,321" Id="LLjZozLvx6lNAp0gOxxGtg" Summary="Receives raw byte messages on a background thread" Tags="subscriber,mqtt">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1588,7 +1588,7 @@
     ************************ Receiver ************************
 
 -->
-      <Node Name="Receiver" Bounds="274,362" Id="Fnm68LYAAI2OKxTDbnh9hU" Summary="Receives raw byte messages" Tags="subscriber">
+      <Node Name="Receiver" Bounds="274,362" Id="Fnm68LYAAI2OKxTDbnh9hU" Summary="Receives raw byte messages" Tags="subscriber,mqtt">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" Name="Process" />
           <FullNameCategoryReference ID="Primitive" />
