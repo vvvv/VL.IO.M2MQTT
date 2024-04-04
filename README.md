@@ -6,7 +6,10 @@ Does not support wildcards in topics! See [VL.IO.MQTTnet](https://www.nuget.org/
 For use with vvvv, the visual live-programming environment for .NET: http://visualprogramming.net
 
 ## Getting started
-- Ships with vvvv
+- Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
+
+    `nuget install VL.IO.M2MQTT -pre`
+  
 - Requires access to an MQTT broker (see below)
 - Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
 
