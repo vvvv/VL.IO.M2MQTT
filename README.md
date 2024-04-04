@@ -1,15 +1,22 @@
 # VL.IO.M2MQTT
-An MQTT client for VL.
+An MQTT client for accessing an MQTT broker.
 
-Try it with vvvv, the visual live-programming environment for .NET  
-Download: http://visualprogramming.net
+Does not support wildcards in topics! See [VL.IO.MQTTnet](https://www.nuget.org/packages/VL.IO.MQTTnet) for an alternative that does.
 
-## Using the library
-In order to use this library with VL you have to install the nuget that is available via nuget.org. For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) in the VL documentation. As described there you go to the commandline and then type:
+For use with vvvv, the visual live-programming environment for .NET: http://visualprogramming.net
 
-    nuget install VL.IO.M2MQTT -pre
+## Getting started
+- Ships with vvvv
+- Requires access to an MQTT broker (see below)
+- Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
 
-Once the VL.IO.M2MQTT nuget is installed and referenced in your VL document you'll see the category "MQTT" under "IO" in the nodebrowser. 
+## Useful links
+- [MQTT software](https://mqtt.org/software/) (brokers, ...)
 
-Demos are available via the Help Browser!
+## Contributing
+- Report issues on [the vvvv forum](https://discourse.vvvv.org/c/vvvv-gamma/28)
+- For custom development requests, please [get in touch](mailto:devvvvs@vvvv.org)
+- When making a pull-request, please make sure to read the general [guidelines on contributing to vvvv libraries](https://thegraybook.vvvv.org/reference/extending/contributing.html)
 
+## Credits
+Based on [M2MqttDotnetCore](https://www.nuget.org/packages/M2MqttDotnetCore/)
