@@ -24,7 +24,8 @@ jobs:
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.43
       with:
-        nuspec: deployment\VL.IO.M2MQTT.nuspec
+        csproj: src\VL.IO.MQTT.csproj
+        nuspec: deployment\VL.IO.MQTT.nuspec
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
         icon-dst: ./deployment/nugeticon.png
         nuget-key: ${{ secrets.VVVV_ORG_NUGET_KEY }}
