@@ -13,6 +13,7 @@
     <tags>VL, iot</tags>
 	<dependencies>
       <dependency id="MQTTNet" version="5.0.1.1416" />
+      <dependency id="MQTTNet.Server" version="5.0.1.1416" />
     </dependencies>
     <icon>icon\nugeticon.png</icon>
     <readme>docs\README.md</readme>
