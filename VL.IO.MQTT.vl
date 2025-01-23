@@ -1832,7 +1832,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KQOVbXyI0uYQWFI214MR38" Location="MQTTnet.Extensions.ManagedClient" Version="4.3.7.1207" />
   <NugetDependency Id="Q1pAgT2oSmIQNgtOr5eIT5" Location="MQTTnet" Version="5.0.1.1416" />
   <PlatformDependency Id="FYi9hSsHZ1HNFNIYIJ4nRf" Location="./lib/net8.0/VL.IO.MQTT.dll" />
   <PlatformDependency Id="THj1ARSBiFZQQqaALWDloZ" Location="System.Memory" />
