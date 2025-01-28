@@ -187,7 +187,6 @@
             <Pin Id="TmZ2xXJreqQQW7v482rzQs" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="LoJwqKJA8SpLj0z9yY4OQF" Name="Server" Kind="InputPin" />
             <Pin Id="KLokK8Lk0L2PCH2Scp8fHC" Name="Port" Kind="InputPin" />
-            <Pin Id="G9nRgrn5btqNBeyUTNUwS9" Name="Use WebSocket" Kind="InputPin" IsHidden="true" />
             <Pin Id="Tbno8zxaYY8PBxSuS6ZCC5" Name="Protocol Version" Kind="InputPin" IsHidden="true" />
             <Pin Id="ObqG7K1eg9cPs8QRPIsieQ" Name="Username" Kind="InputPin" />
             <Pin Id="D7H085RFvkFNWQ2YnrSnJW" Name="Password" Kind="InputPin" />
@@ -230,7 +229,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KTfqFwCFX4dNCaERqmF5et" Bounds="487,282,482,152" ShowValueBox="true" isIOBox="true" Value="Optional Inputs on the MQTTClient:&#xD;&#xA;- Protocol Version: The MQTT protocol version to use, defaults to 3.11&#xD;&#xA;- Use WebSocket: For connecting to a non-TCP MQTT broker, defaults to false&#xD;&#xA;- Use TLS: Defaults to false&#xD;&#xA;- SSL Protocol: Defaults to None&#xD;&#xA;- Allow Untrusted Certificates: Defaults to false&#xD;&#xA;- Auto Reconnect Delay: Defaults to 5s&#xD;&#xA;- Auto Reconnect: Defaults to true">
+          <Pad Id="KTfqFwCFX4dNCaERqmF5et" Bounds="487,282,438,139" ShowValueBox="true" isIOBox="true" Value="Optional Inputs on the MQTTClient:&#xD;&#xA;- Protocol Version: The MQTT protocol version to use, defaults to 3.11&#xD;&#xA;- Use TLS: Defaults to false&#xD;&#xA;- SSL Protocol: Defaults to None&#xD;&#xA;- Allow Untrusted Certificates: Defaults to false&#xD;&#xA;- Auto Reconnect Delay: Defaults to 5s&#xD;&#xA;- Auto Reconnect: Defaults to true">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -261,7 +260,7 @@
             <Pin Id="I832fgoQ9bJPPdGwHKv19z" Name="Apply" Kind="InputPin" />
             <Pin Id="QAWtFJUHm96NLSnetlEyVz" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="519,850,65,19" Id="LBLxkPyphiLOrNTYz4Dsgw">
+          <Node Bounds="516,810,65,19" Id="LBLxkPyphiLOrNTYz4Dsgw">
             <p:NodeReference LastCategoryFullName="IO.MQTT" LastDependency="VL.IO.MQTT.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="MQTT" NeedsToBeDirectParent="true" />
@@ -293,7 +292,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QIOggwVW5sdNmC8oaNVvF2" Bounds="591,873,162,19" ShowValueBox="true" isIOBox="true" Value="&lt; For receiving raw bytes">
+          <Pad Id="QIOggwVW5sdNmC8oaNVvF2" Bounds="588,833,162,19" ShowValueBox="true" isIOBox="true" Value="&lt; For receiving raw bytes">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -302,7 +301,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="519,884,65,19" Id="THCMj1A80uUNwKNw4dUy3a">
+          <Node Bounds="516,844,65,19" Id="THCMj1A80uUNwKNw4dUy3a">
             <p:NodeReference LastCategoryFullName="IO.MQTT" LastDependency="VL.IO.MQTT.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Receiver (Reactive)" />
@@ -333,6 +332,24 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="Vx3KE8M0MrHLpN4OYKmcFM" Bounds="685,147,255,80" ShowValueBox="true" isIOBox="true" Value="Connections via WebSocket:&#xD;&#xA;- Url needs to start with ws:// or wss://&#xD;&#xA;- Url needs to include port&#xD;&#xA;e.g: ws://test.mosquitto.org:8080/mqtt">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="516,880,51,19" Id="MJOX8m5fADuOsdR3llmz78">
+            <p:NodeReference LastCategoryFullName="IO.MQTT" LastDependency="VL.IO.MQTT.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="MQTT" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Payload" />
+            </p:NodeReference>
+            <Pin Id="RsfGrzZu2k2PawUK4VvwlE" Name="Input" Kind="InputPin" />
+            <Pin Id="NDB7f8nSDO3OHwVDDFoA58" Name="Result" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="GUsazFg1H4eLoKT3wTx1Gl" Name="Create" />
         <Patch Id="GtlRcTZ7gYeMKoWQ1coRAa" Name="Update" />
