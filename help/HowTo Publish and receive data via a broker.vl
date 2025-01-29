@@ -76,7 +76,7 @@
             <Pin Id="DvrXfSXGOPyLXnNQeWGIPU" Name="Result" Kind="OutputPin" />
             <Pin Id="SwITGACxs1mMIb2icvPB1E" Name="On Data" Kind="OutputPin" />
             <Pin Id="KegMaBZuvlcNTEmzoo8pZl" Name="Encoding" Kind="InputPin" />
-            <Pin Id="QPSfzJIZLmQPMn6sluIIBz" Name="Quality Of Service Level" Kind="InputPin" />
+            <Pin Id="UOpQYWFQkK4OJcOCPSXrZ9" Name="Quality Of Service Level" Kind="InputPin" IsHidden="true" />
             <Pin Id="GVmwULnayZvOSzyPr8eFtB" Name="Subscribed" Kind="InputPin" />
           </Node>
           <Pad Id="GClHwyZc5WiLQy7eIzjR8G" Comment="" Bounds="525,738,199,33" ShowValueBox="true" isIOBox="true" />
@@ -135,7 +135,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="ThDH5gJrGiCLOfkLsw4VZV" Comment="Topic" Bounds="544,568,90,15" ShowValueBox="true" isIOBox="true" Value="foo/bar">
+          <Pad Id="ThDH5gJrGiCLOfkLsw4VZV" Comment="Topic" Bounds="552,583,90,15" ShowValueBox="true" isIOBox="true" Value="foo/bar">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -172,6 +172,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="MQTTClient" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="TmZ2xXJreqQQW7v482rzQs" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="LoJwqKJA8SpLj0z9yY4OQF" Name="Server" Kind="InputPin" />
             <Pin Id="KLokK8Lk0L2PCH2Scp8fHC" Name="Port" Kind="InputPin" />
@@ -187,7 +188,7 @@
             <Pin Id="JW2ty9mkCr0PzjgS37RzQs" Name="Enabled" Kind="InputPin" />
             <Pin Id="RLh2JjdSr7sLxS0JPPhHdp" Name="Output" Kind="StateOutputPin" />
             <Pin Id="RKfzLfasGbFOoXO4LH7mZS" Name="Is Connected" Kind="OutputPin" />
-            <Pin Id="Lfk7YhsXjeTMNYnYir4Qv0" Name="Publish Queue" Kind="OutputPin" />
+            <Pin Id="LhDxFxv8t1RMJtQF8Fv6Va" Name="Publish Queue Length" Kind="OutputPin" />
             <Pin Id="BYS3h7WbuK8Owvb1hMkefZ" Name="Client Id" Kind="OutputPin" />
           </Node>
           <Pad Id="M3kS3lOCsnxOByE83zVqoP" Bounds="487,151,172,19" ShowValueBox="true" isIOBox="true" Value="https://broker.hivemq.com">
@@ -261,7 +262,7 @@
             <Pin Id="BiFkZGEkq5sLxSELnOW9VD" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Bs6L9uXpl8ILrCFkSKGF0p" Name="Input" Kind="InputPin" />
             <Pin Id="QiXbJKBpie4M8XnYlFsWuJ" Name="Topic" Kind="InputPin" />
-            <Pin Id="PiqLAzcaHyFLGE1kA3Bb84" Name="Quality Of Service Level" Kind="InputPin" />
+            <Pin Id="JRCgJ6wq6CzLSy7MXXWMdQ" Name="Quality Of Service Level" Kind="InputPin" IsHidden="true" />
             <Pin Id="QoGzjtsqXQCMUaGi3j2LLG" Name="Subscribed" Kind="InputPin" />
             <Pin Id="Q91Sqrl3HBuNK2LEdXEvSc" Name="Result" Kind="OutputPin" />
             <Pin Id="G76mx5ngcNeM3PhepSKYL9" Name="On Data" Kind="OutputPin" />
@@ -284,7 +285,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QIOggwVW5sdNmC8oaNVvF2" Bounds="588,833,162,19" ShowValueBox="true" isIOBox="true" Value="&lt; For receiving raw bytes">
+          <Pad Id="QIOggwVW5sdNmC8oaNVvF2" Bounds="653,861,162,19" ShowValueBox="true" isIOBox="true" Value="&lt; For receiving raw bytes">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -302,11 +303,11 @@
             <Pin Id="VUfzXN75bJlNTvdWHdQUfr" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="NndYcmfaXSwPHWhh7twS7L" Name="Input" Kind="InputPin" />
             <Pin Id="V4uFVm2KDl5OKHdLvWqtpF" Name="Topic" Kind="InputPin" />
-            <Pin Id="P8puXakbVQxO115bdtx2LK" Name="Quality Of Service Level" Kind="InputPin" />
+            <Pin Id="Dzkb3UGOogzPXKj0SRpgb5" Name="Quality Of Service Level" Kind="InputPin" IsHidden="true" />
             <Pin Id="Udot7zEWQ4AP5Kt07wOxVj" Name="Subscribed" Kind="InputPin" />
             <Pin Id="QlvARgx8EDQM3AXkWIQSj3" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="UjDSOaAgfKcNLEoTzQgRUD" Bounds="335,207,120,19" ShowValueBox="true" isIOBox="true" Value="&lt; Must be unique!">
+          <Pad Id="UjDSOaAgfKcNLEoTzQgRUD" Bounds="341,207,120,19" ShowValueBox="true" isIOBox="true" Value="&lt; Must be unique!">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -316,7 +317,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Gwjmb0grzKiNvbNIBm3hfj" Comment="Client Id" Bounds="227,334,59,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="KYoQesndL8TON2cDEgzh7J" Bounds="335,333,126,41" ShowValueBox="true" isIOBox="true" Value="&lt; Autogenerated in case not specified">
+          <Pad Id="KYoQesndL8TON2cDEgzh7J" Bounds="341,333,126,41" ShowValueBox="true" isIOBox="true" Value="&lt; Autogenerated in case not specified">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -334,16 +335,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="516,880,51,19" Id="MJOX8m5fADuOsdR3llmz78">
-            <p:NodeReference LastCategoryFullName="IO.MQTT" LastDependency="VL.IO.MQTT.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="Category" Name="MQTT" NeedsToBeDirectParent="true" />
-              <Choice Kind="OperationCallFlag" Name="Payload" />
-            </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-            <Pin Id="RsfGrzZu2k2PawUK4VvwlE" Name="Input" Kind="InputPin" />
-            <Pin Id="NDB7f8nSDO3OHwVDDFoA58" Name="Result" Kind="OutputPin" />
-          </Node>
           <Node Bounds="113,758,129,80" Id="LG9a2fWzTjVMBi9lO7hcG9">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -381,8 +372,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HyoBSUChmZDN65vtFyCT7w" Comment="Publish Queue" Bounds="194,381,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="AfE0oB6BSKfLAEkWKzxGRv" Bounds="315,379,151,59" ShowValueBox="true" isIOBox="true" Value="&lt; When using the non-advanced Publish nodes">
+          <Pad Id="HyoBSUChmZDN65vtFyCT7w" Comment="Publish Queue Length" Bounds="194,381,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="AfE0oB6BSKfLAEkWKzxGRv" Bounds="341,377,118,121" ShowValueBox="true" isIOBox="true" Value="&lt; When using the non-advanced Publish nodes, this would grow if publishing traffic is too high.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -391,6 +382,30 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="504,886,128,84" Id="StfdFTN8W8cLHFQE837paw">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Control" />
+              <Choice Kind="ProcessAppFlag" Name="Comment" />
+            </p:NodeReference>
+            <Patch Id="SZpVulIaxi1LeptRiEyFfp" ManuallySortedPins="true">
+              <Patch Id="Qm5G07vlAQBLsZXMcuanrE" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="EznbRciyfc2LF6p1fKCJPG" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="TjHkQk7W19nL9NDimRnRlF" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="516,918,104,26" Id="MYtXxq97kymPJpHwXkzs8s">
+                <p:NodeReference LastCategoryFullName="IO.MQTT.MqttApplicationMessage" LastDependency="VL.IO.MQTT.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="MqttApplicationMessage" />
+                  <Choice Kind="OperationCallFlag" Name="Split" />
+                </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+                <Pin Id="HYiFrpl2VAuPIKafS7VaMI" Name="Input" Kind="StateInputPin" />
+                <Pin Id="RYG4rHZ9bNpMQqlW6V5fMz" Name="Topic" Kind="OutputPin" />
+                <Pin Id="EXK5tDI5snGOlR73YaMFkw" Name="Payload" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <Pin Id="DjHAEmBAdjKPA4h3haxvOp" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
         </Canvas>
         <Patch Id="GUsazFg1H4eLoKT3wTx1Gl" Name="Create" />
         <Patch Id="GtlRcTZ7gYeMKoWQ1coRAa" Name="Update" />
@@ -417,7 +432,7 @@
         <Link Id="Gdv8tEaFlrQP8sYAnJCrMW" Ids="BYS3h7WbuK8Owvb1hMkefZ,Gwjmb0grzKiNvbNIBm3hfj" />
         <Link Id="BaetD85iLcUPtkuSrbyF2u" Ids="ChxKuwnaLQYMaF5z2sevpG,QsVt9GrxXkNNio6Q1j0odn" />
         <Link Id="C9DRGcxMBEiL8ZNKeNgx5y" Ids="QAWtFJUHm96NLSnetlEyVz,MyCskm7fWpHOCa9yc1ugbB" />
-        <Link Id="KchoDyzkkZZLtVOniPcBe0" Ids="Lfk7YhsXjeTMNYnYir4Qv0,HyoBSUChmZDN65vtFyCT7w" />
+        <Link Id="EWJbTnLtGznNgkkEu9BHYU" Ids="LhDxFxv8t1RMJtQF8Fv6Va,HyoBSUChmZDN65vtFyCT7w" />
       </Patch>
     </Node>
   </Patch>
