@@ -613,7 +613,7 @@
       </p:NodeReference>
       <Patch Id="Pzwbw8Q8csINcAqXTIGpwY">
         <Canvas Id="LW7vDkoR5jxMjtUpkIvOOn" CanvasType="Group">
-          <Node Bounds="163,854,145,19" Id="U0oxVCSZpX8LnC6C9ksRGH">
+          <Node Bounds="149,843,145,19" Id="U0oxVCSZpX8LnC6C9ksRGH">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -698,7 +698,7 @@
                 <Pin Id="OglCfsxDhGSPWqF2mPYX5K" Name="Name" Kind="OutputPin" />
                 <Pin Id="GSW0sj4u1sUPryZPxB6Ipx" Name="GUID" Kind="OutputPin" />
               </Node>
-              <Pad Id="IaEo4ZfnvcrLPzjchTJ0yX" Comment="Topic" Bounds="417,768,111,15" ShowValueBox="true" isIOBox="true" Value="vvvv/players/player">
+              <Pad Id="IaEo4ZfnvcrLPzjchTJ0yX" Comment="Topic" Bounds="417,768,111,15" ShowValueBox="true" isIOBox="true" Value="vvvv/players/player-">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
@@ -773,14 +773,14 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="202,465,45,26" Id="RV33kWhgSApMo4UOvzXHq0">
+          <Node Bounds="172,469,45,26" Id="RV33kWhgSApMo4UOvzXHq0">
             <p:NodeReference LastCategoryFullName="Main.Settings" LastDependency="Core.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Settings" />
               <Choice Kind="OperationCallFlag" Name="Split" />
             </p:NodeReference>
             <Pin Id="HpZ6Je1XAE2PHQ9s3PZV3V" Name="Input" Kind="StateInputPin" />
-            <Pin Id="IcYygMSWyvwNJe3ohHg5ad" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="IcYygMSWyvwNJe3ohHg5ad" Name="Output" Kind="OutputPin" />
             <Pin Id="LrQ6Uz7kFY3LTwrsgIIIgu" Name="Background Color" Kind="OutputPin" />
             <Pin Id="AY1rwixn6Z1OdkzCUTOFGo" Name="Auto Move" Kind="OutputPin" />
           </Node>
@@ -827,13 +827,13 @@
               </Node>
             </Patch>
           </Node>
-          <Node Bounds="202,426,65,19" Id="IBbOBBGW78GOkiPEoFNXFa">
+          <Node Bounds="172,430,65,19" Id="IBbOBBGW78GOkiPEoFNXFa">
             <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
             </p:NodeReference>
             <Pin Id="KwgmAwF9VW1OmdZA4JHiHa" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Gdge81pPU7vQT4LxDXK9hY" Name="Initial Result" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Gdge81pPU7vQT4LxDXK9hY" Name="Initial Result" Kind="InputPin" />
             <Pin Id="ABs0FOsuYEZMj86IiaDIny" Name="Async Notifications" Kind="InputPin" />
             <Pin Id="Nan5fqcVrzxNDBmBWiC4sO" Name="Reset" Kind="InputPin" />
             <Pin Id="PRai3BydHaDMlAtENqJiBk" Name="Value" Kind="OutputPin" />
@@ -890,6 +890,15 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="120,381,46,26" Id="DXYjqN5i8arPrBckAALLvz">
+            <p:NodeReference LastCategoryFullName="Main.Settings" LastDependency="Demo Core.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Settings" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="BBaHgJ54TgKN0tDXIzXI10" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Jx8EHZvoiSQNvH0F6AbwJ3" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
         </Canvas>
         <Patch Id="HcBM5MfLNHFOyuInPibVuv" Name="Create" />
         <Patch Id="GEiSOg2u59oPyVXgx2gNGl" Name="Update" />
@@ -927,12 +936,12 @@
         <Link Id="KiSM550wgo5LenkaHvJKnV" Ids="EuropKEk3qaLXilpIp6tZj,N2qFNvZ9MjOOVii5FDIUwx" />
         <Link Id="Ij2UNABUOWRLkAOjC17f3L" Ids="LBqrRZqiLtNLcChphxYLvz,AGyF4vH6HH0PTUHuz5ysDg" />
         <Link Id="BqOYCkeRc7wMleF0HWkN16" Ids="Es6XwLTYHGnQFt3coMi0Mn,AR1UIzTi1kCMCYa5pSYxum" />
+        <Link Id="SYG55merQvlPtpXak8vJGb" Ids="BBaHgJ54TgKN0tDXIzXI10,Gdge81pPU7vQT4LxDXK9hY" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="VSz0ttmR6kwM7mS04zpPUY" Location="VL.Skia" Version="2024.6.7" />
   <NugetDependency Id="Pw6bmWpcO6TLrvz3zq1KOm" Location="VL.Serialization.MessagePack" Version="2024.6.7" />
   <NugetDependency Id="GsVTm9g1Gi3Nctn796841v" Location="VL.IO.MQTT" Version="1.2.0" />
-  <NugetDependency Id="F8cSE5WqMZWLD77ADtPhMh" Location="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
   <DocumentDependency Id="BxOqvoQdDWSMGsyr7FpR5y" Location="./Demo Core.vl" />
 </Document>

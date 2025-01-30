@@ -210,8 +210,13 @@
             <ControlPoint Id="KWNyRGo772bM8LULaIBDdW" Bounds="636,328" />
             <ControlPoint Id="Ifqeg336cInQPAGi9d3zaG" Bounds="473,270" />
             <ControlPoint Id="FG7YutxMJS8LUTAqM6XkFO" Bounds="473,330" />
+            <Pad Id="QDjjJJ2hMhnL855UccPJZ0" Comment="Background Color" Bounds="561,244,20,15" ShowValueBox="true" isIOBox="true" Value="0, 0, 0, 1">
+              <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="RGBA" />
+              </p:TypeAnnotation>
+            </Pad>
           </Canvas>
-          <Patch Id="DatCpYnVgbvO9jukC4SQIX" Name="Create" />
+          <Patch Id="DatCpYnVgbvO9jukC4SQIX" Name="Create" ParticipatingElements="EuKSCjYVBukQaOe7OyzN8a" />
           <ProcessDefinition Id="Oryn9cLpgZTPc2gdbAiPBD" HasStateOut="true">
             <Fragment Id="Oderp1RBxSFPTN56vFThTR" Patch="DatCpYnVgbvO9jukC4SQIX" Enabled="true" />
             <Fragment Id="SCHV7CYgy1kMMasqhZNrKx" Patch="AXejry73mC5OOuwYvBjNYj" />
@@ -243,144 +248,7 @@
             <Pin Id="BB9SpGgBrlzNazYJ9nIC3L" Name="Background Color" Kind="InputPin" DefaultValue="0, 0, 0, 1" />
             <Pin Id="O52PzqbwsOHOTJT7kmEWNJ" Name="Auto Move" Kind="InputPin" />
           </Patch>
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ MyStartup ************************
-
--->
-      <Node Name="MyStartup" Bounds="416,374" Id="ATnk3NyUWywLDCi6I8M5sv">
-        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-          <Choice Kind="ClassDefinition" Name="Class" />
-        </p:NodeReference>
-        <p:Interfaces>
-          <TypeReference LastCategoryFullName="Main" LastDependency="callmenames-2023-10-04.vl">
-            <Choice Kind="MutableInterfaceType" Name="IStartup" />
-          </TypeReference>
-        </p:Interfaces>
-        <Patch Id="H6m1hqYw5UFOv6QS2uxX6s">
-          <Canvas Id="FLMQ0IWqZHmOvEGD9Ahgkn" CanvasType="Group">
-            <ControlPoint Id="FkfdApSjFobPDqK1QYl3uq" Bounds="112,401" />
-            <Node Bounds="110,573,119,26" Id="AsXn34LrqEVOsgk2Jlk0Mj">
-              <p:NodeReference LastCategoryFullName="Microsoft.Extensions.Configuration.JsonConfigurationExtensions" LastDependency="Microsoft.Extensions.Configuration.Json.dll" OverloadStrategy="AllPinsThatAreNotCommon">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="AddJsonFile" />
-                <PinReference Kind="InputPin" Name="Path" />
-                <PinReference Kind="InputPin" Name="Optional" />
-                <PinReference Kind="InputPin" Name="Reload On Change" />
-              </p:NodeReference>
-              <Pin Id="KDmEoFcyHGlPvihNUoq0RI" Name="Input" Kind="StateInputPin" />
-              <Pin Id="MKShz1bs4KTM08Bzb4HKRX" Name="Path" Kind="InputPin" />
-              <Pin Id="CHgJwASLDD2Lzqf58d7oOY" Name="Optional" Kind="InputPin" DefaultValue="True" />
-              <Pin Id="KgVEfvClzGrMfyCsmjNoBf" Name="Reload On Change" Kind="InputPin" />
-              <Pin Id="CFbU4YWUOeGMG4GHql4Yoe" Name="Output" Kind="OutputPin" />
-            </Node>
-            <Pad Id="HM6HSURVHVqPCtAxRweOZ9" Comment="Path" Bounds="170,479,105,15" ShowValueBox="true" isIOBox="true" Value="appsettings.json">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-            </Pad>
-            <Pad Id="VilS930OBZLNsMPVlR6TOv" Comment="Reload On Change" Bounds="226,535,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-              </p:ValueBoxSettings>
-            </Pad>
-            <Pad Id="IJL47JT69qqLl3mcYrYvOA" Bounds="462,208,279,22" ShowValueBox="true" isIOBox="true" Value="Reference for the complete IStartup interface:">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:fontsize p:Type="Int32">9</p:fontsize>
-                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-              </p:ValueBoxSettings>
-            </Pad>
-            <Pad Id="UgGU46E4yNhPZXs6pgKugu" Bounds="462,227,466,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/vvvv/VL.StandardLibs/blob/main/VL.Core/src/IStartup.cs">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:fontsize p:Type="Int32">9</p:fontsize>
-                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
-              </p:ValueBoxSettings>
-            </Pad>
-            <Pad Id="OteglUglGTDMkVSsTCf6tR" Bounds="52,174,363,19" ShowValueBox="true" isIOBox="true" Value="https://learn.microsoft.com/en-us/dotnet/core/extensions/configuration#configuration-providers">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:fontsize p:Type="Int32">9</p:fontsize>
-                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
-              </p:ValueBoxSettings>
-            </Pad>
-            <Pad Id="GLDQ41nJOzqMEAjnxVqFqJ" Bounds="52,207,386,140" ShowValueBox="true" isIOBox="true" Value="2) Implement the IStartup interfaces &quot;SetupConfiguration&quot; operation that will give you access to a Configuration Builder&#xD;&#xA;&#xD;&#xA;3) Add a configuration provider to the Configuration Builder and configure it&#xD;&#xA;&#xD;&#xA;4) Restart your app (F9) for the provider to get activated&#xD;&#xA;">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:fontsize p:Type="Int32">9</p:fontsize>
-                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-              </p:ValueBoxSettings>
-            </Pad>
-            <Node Bounds="148,440,87,19" Id="C7SMZFGEmT3Pyq0V5CAZke">
-              <p:NodeReference LastCategoryFullName="System.Application" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="ApplicationPath" />
-              </p:NodeReference>
-              <Pin Id="UtypjooB98QNa5JKRktlCZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="VSgoNEV6f8EPhuLB2GH2ou" Name="Output" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="148,505,25,19" Id="SvUNQfSGupWNDaoQk9kxDO">
-              <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="+" />
-              </p:NodeReference>
-              <Pin Id="VmVHXidQAUdOeKaFCdrt0u" Name="Input" Kind="InputPin" />
-              <Pin Id="TplJhLgWsMEOCM3iV17GbH" Name="Input 2" Kind="InputPin" />
-              <Pin Id="RhYy9vihz5vPAlQs0yXjRH" Name="Output" Kind="OutputPin" />
-            </Node>
-            <Pad Id="FLqFnmw7BjpPJAgLJCZX07" Bounds="187,627,245,41" ShowValueBox="true" isIOBox="true" Value="^ Red node? Check missing dependencies in the Document Menu!">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:fontsize p:Type="Int32">9</p:fontsize>
-                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-              </p:ValueBoxSettings>
-            </Pad>
-            <Pad Id="BEmGa72vMhOQGl3biRYqsM" Bounds="52,134,380,41" ShowValueBox="true" isIOBox="true" Value="1) There is a wide range of configuration providers that can be used, see:">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:fontsize p:Type="Int32">9</p:fontsize>
-                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-              </p:ValueBoxSettings>
-            </Pad>
-          </Canvas>
-          <ProcessDefinition Id="PKN5qhv6X9kN4Af6FIi5ei" IsHidden="true">
-            <Fragment Id="NplT5h70UyrQWfVCP0NNUm" Patch="KdsonRrNNhnOxKZhXvU4zA" Enabled="true" />
-            <Fragment Id="ItHqQSNJcz6QDOFY2t6kqL" Patch="D1Fle4wq7PLPPsvkbSTvaM" />
-            <Fragment Id="MIDmltC44BqO3yIGoJgI5W" Patch="CR8MPem11b4Ma7w0GkR73s" />
-          </ProcessDefinition>
-          <Link Id="FrgF8wkz3V1PdDT5C55Xcl" Ids="Dwzkwsl7BqlMNt57gOPezq,FkfdApSjFobPDqK1QYl3uq" IsHidden="true" />
-          <Link Id="QBIJVmQrGjIM1YewLthUW5" Ids="VilS930OBZLNsMPVlR6TOv,KgVEfvClzGrMfyCsmjNoBf" />
-          <Link Id="QDBdPYrwYjFPu0qB6X7sWb" Ids="FkfdApSjFobPDqK1QYl3uq,KDmEoFcyHGlPvihNUoq0RI" />
-          <Patch Id="KdsonRrNNhnOxKZhXvU4zA" Name="Create" />
-          <Patch Id="D1Fle4wq7PLPPsvkbSTvaM" Name="SetupLogging">
-            <Pin Id="JvhcgQJs7NAN7noVMnPRcu" Name="App Host" Kind="InputPin" />
-            <Pin Id="KP60y5TPwewLI2vf3Su4LG" Name="Logging Builder" Kind="InputPin" />
-          </Patch>
-          <Patch Id="CR8MPem11b4Ma7w0GkR73s" Name="SetupConfiguration">
-            <Pin Id="Q2O47QJuEzDQUnvuUiHAWE" Name="App Host" Kind="InputPin" />
-            <Pin Id="Dwzkwsl7BqlMNt57gOPezq" Name="Configuration Builder" Kind="InputPin" />
-          </Patch>
-          <Link Id="TaeAkZ2EO5pLfF0RY2fSf7" Ids="VSgoNEV6f8EPhuLB2GH2ou,VmVHXidQAUdOeKaFCdrt0u" />
-          <Link Id="EvrvXvyI9hcOlJhBVE1LuC" Ids="HM6HSURVHVqPCtAxRweOZ9,TplJhLgWsMEOCM3iV17GbH" />
-          <Link Id="EdMg4Y3m5IzN7fmcwI59PT" Ids="RhYy9vihz5vPAlQs0yXjRH,MKShz1bs4KTM08Bzb4HKRX" />
+          <Link Id="EuKSCjYVBukQaOe7OyzN8a" Ids="QDjjJJ2hMhnL855UccPJZ0,Mt4xHSjz2omN3ZIo1EdqIh" />
         </Patch>
       </Node>
     </Canvas>
@@ -406,5 +274,4 @@
     </Node>
   </Patch>
   <NugetDependency Id="AVrfodnY8LWO76Qb0rPoCi" Location="VL.Skia" Version="2024.6.7" />
-  <NugetDependency Id="REflg4EeuwlMUVLh2ypeqb" Location="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
 </Document>

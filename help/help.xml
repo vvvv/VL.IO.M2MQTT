@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Pack>
 	<VLDocument link="HowTo Publish and receive data via a broker.vl" />
+	<UriItem title="Explanation Networking with MQTT" link="https://youtu.be/h_TQFUN8EQ0" mediaType="video"/>
 </Pack>
