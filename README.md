@@ -1,5 +1,5 @@
 # VL.IO.MQTT
-MQTT client and broker.
+MQTT client and broker nodes. For an introduction, watch the vvvvTv episode: [Networking with MQTT](https://youtube.com/live/LZ-y5FOrdh0)
 
 For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
 
